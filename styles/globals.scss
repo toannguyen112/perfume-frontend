@@ -1,0 +1,46 @@
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
+@import "components/type";
+@import "components/input";
+@import "components/fonts";
+
+@layer base {
+  body {
+    --topbar-height: 4rem;
+    --sidebar-width: 16rem;
+    @apply text-sm;
+  }
+
+  svg,
+  img {
+    @apply max-w-full max-h-full;
+  }
+
+  textarea {
+    @apply resize-none;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+
+  a {
+    @apply block cursor-pointer;
+  }
+}
+
+.text-stroke {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  -webkit-text-stroke-width: 2px;
+  opacity: .4;
+}

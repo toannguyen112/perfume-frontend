@@ -1,0 +1,15 @@
+.pagination {
+    @apply flex items-center text-black mt-4;
+
+    .pagination-item {
+        @apply p-[12px] cursor-pointer;
+    }
+
+    .pagination-item.active {
+        @apply bg-white text-green-500 border-gray-200 shadow-sm rounded-[8px];
+    }
+
+    .pagination-item.disable {
+        @apply opacity-20 cursor-not-allowed;
+    }
+}
