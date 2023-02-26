@@ -1,0 +1,70 @@
+.magazine {
+  .magazine__content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 33px;
+    .item {
+      position: relative;
+      transition: all 0.5s;
+      .item__image {
+        height: 166px;
+        overflow: hidden;
+        width: 100%;
+        img {
+          height: 100%;
+          transition: all 0.4s ease-in-out;
+        }
+
+        @media #{$info-phone-3} {
+          height: 180px;
+        }
+        @media #{$info-phone-4} {
+          height: 100px;
+        }
+      }
+      .item__content {
+        text-align: left;
+        margin-top: 15px;
+        @font-size (14px);
+        line-height: 17px;
+        h3 {
+          font-weight: bolder;
+          margin-bottom: 8px;
+          @media #{$info-tablet-vertical} {
+            margin-top: 5px;
+          }
+        }
+        p {
+          color: #707070;
+        }
+        @media #{$info-tablet-vertical} {
+          margin-top: 6px;
+        }
+        @media #{$info-phone} {
+          line-height: 14px;
+        }
+      }
+      &:hover {
+        .item__image {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+    }
+    @media #{$info-phone} {
+      grid-template-columns: repeat(2, 1fr);
+      .item {
+        max-width: 296px;
+      }
+    }
+    @media #{$info-phone-3} {
+      grid-template-columns: repeat(1, 1fr);
+      .item {
+        max-width: 296px;
+        align-self: center;
+        justify-self: center;
+      }
+    }
+  }
+}

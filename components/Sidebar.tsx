@@ -7,7 +7,6 @@ function Sidebar() {
 
     const router = useRouter();
     const currentRoute = router.pathname;
-
     const activeClass = (url: string) => currentRoute === url ? 'nav-link active' : 'nav-link';
 
     return (
