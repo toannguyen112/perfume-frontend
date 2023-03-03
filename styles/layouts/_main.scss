@@ -41,8 +41,8 @@ main {
   align-items: center;
   list-style: none;
   li {
-    padding: 3px 9px;
-    border-radius: 5px;
+    padding: 4px 9px;
+    border-radius: 50%;
     margin-right: 10px;
     a {
       @include font-size(16px);
@@ -50,14 +50,19 @@ main {
       text-decoration: none;
     }
     &.active {
-      background-color: #01adab;
+      background-color: #d72229;
       a {
         color: #fff;
       }
     }
+    @media #{$info-phone-3} {
+      padding: 6px 9px;
+    }
+  }
+  li:first-child {
+    margin-right: 15;
   }
   li:last-child {
-    border: 1px solid #808081;
     margin-right: 0;
   }
 }
@@ -503,3 +508,153 @@ main {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+.common-product-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  .item {
+    position: relative;
+    border: 1px solid #e5e5e4;
+    text-align: center;
+    transition: all 0.5s;
+    .item__event {
+      position: absolute;
+      background-color: #d72229;
+      top: 0;
+      left: 5%;
+      z-index: 4;
+      width: 44px;
+      height: 33px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 5px;
+      p {
+        color: #fff;
+        font-weight: bolder;
+        span {
+          font-weight: normal;
+          @include font-size(12px);
+        }
+      }
+      @media #{$info-phone-3} {
+        height: 24px;
+      }
+    }
+    .item__image {
+      height: 280px;
+      width: 100%;
+      @media #{$info-phone-3} {
+        height: 180px;
+      }
+      @media #{$info-phone-4} {
+        height: 280px;
+      }
+    }
+    .item__info {
+      text-align: left;
+      margin-top: 15px;
+      padding: 0 15px;
+      h3 {
+        @include font-size(18px);
+        color: #020202;
+        text-decoration: none;
+        transition: all 0.5s;
+        line-height: 22px;
+        font-weight: bolder;
+      }
+      p {
+        @include font-size(16.8px);
+        color: #d72229;
+        font-weight: bolder;
+        line-height: 18px;
+      }
+      ul {
+        display: flex;
+        margin: 10px 0;
+        justify-content: center;
+        gap: 10px;
+        li {
+          a {
+            height: 42px;
+            width: 42px;
+            padding: 4px;
+            border-radius: 50%;
+            border: 2px solid #f0f0f0;
+            transition: all 0.3s;
+            img {
+              border-radius: 50%;
+            }
+          }
+          &:hover {
+            a {
+              border-color: #d72229;
+            }
+          }
+        }
+      }
+    }
+    &:hover {
+      box-shadow: -1px 2px 15px -4px rgba(0, 0, 0, 0.75);
+      h3 {
+        color: #d72229;
+      }
+    }
+  }
+  @media #{$info-tablet-vertical} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media #{$info-tablet-vertical-1} {
+    grid-template-columns: repeat(2, 1fr);
+    .item {
+      .item__event {
+        height: 24px;
+      }
+      .item__image {
+        height: 210px;
+      }
+    }
+  }
+  @media #{$info-phone-2} {
+    .item {
+      .item__image {
+        height: 170px;
+      }
+    }
+  }
+  @media #{$info-phone-2} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media #{$info-phone-3} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media #{$info-phone-4} {
+    grid-template-columns: repeat(1, 1fr);
+    .item {
+      .item__image {
+        height: 240px;
+      }
+    }
+  }
+}
+
+// .form-control {
+//   display: block;
+//   width: 100%;
+//   height: 34px;
+//   padding: 6px 12px;
+//   font-size: 14px;
+//   line-height: 1.42857143;
+//   color: #555;
+//   background-color: #fff;
+//   background-image: none;
+//   border: 1px solid #ccc;
+//   border-radius: 4px;
+//   -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+//   box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+//   -webkit-transition: border-color ease-in-out 0.15s,
+//     -webkit-box-shadow ease-in-out 0.15s;
+//   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+//   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+// }

@@ -16,6 +16,7 @@
 // ----------------------------------------------------
 // Layout
 @import "layouts/button";
+@import "layouts/form-custom";
 @import "layouts/header";
 @import "layouts/footer";
 @import "layouts/common";
@@ -23,6 +24,7 @@
 
 //Page
 @import "page/home/index";
+@import "page/collection/index";
 
 @layer base {
   body {
