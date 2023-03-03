@@ -1,0 +1,243 @@
+.cart {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  .cart__top {
+    a {
+      font-size: 14px;
+      color: #2e1ee4;
+      margin-bottom: 18px;
+      svg {
+        margin-right: 4px;
+      }
+    }
+    h2 {
+      font-weight: bolder;
+      font-size: 32px;
+      margin-bottom: 18px;
+    }
+  }
+  .cart__midle {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 13.5px;
+    .cart__midle_left {
+      grid-column: 1 / span 8;
+      background-color: #fff;
+      .left__content {
+        ul {
+          list-style: none;
+          @include flex();
+        }
+        .content__title {
+          @include flex();
+          align-items: center;
+          justify-content: space-between;
+          li {
+            white-space: nowrap;
+            padding: 10px 0;
+            font-weight: bolder;
+            color: #808081;
+            @include font-size(14px);
+          }
+          li:nth-child(1) {
+            width: 180px;
+            @media #{$info-phone} {
+              width: 100px;
+            }
+            @media #{$info-phone-2} {
+              width: 80px;
+            }
+          }
+          li:nth-child(2) {
+            padding-left: 15px;
+            // @media #{$info-phone-2} {
+            //   padding-left: 30px;
+            // }
+          }
+          li:nth-child(3) {
+            padding-left: 0;
+            // @media #{$info-phone-2} {
+            //   padding-right: 35px;
+            // }
+          }
+        }
+        .content__products {
+          .products__item {
+            border-top: 1px solid #e5e5e4;
+            @include flex();
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            .item__image {
+              @include flex();
+              height: 110px;
+              align-items: center;
+              img {
+                @media #{$info-phone-2} {
+                  width: 50%;
+                }
+                @media #{$info-phone-3} {
+                  width: 50%;
+                }
+                @media #{$info-phone-4} {
+                  width: 30%;
+                }
+              }
+              div {
+                width: 200px;
+                margin-left: 25px;
+                p {
+                  @include font-size(14px);
+                  color: #434343;
+                }
+                a {
+                  @include font-size(14px);
+                  color: #d72229;
+                }
+                @media #{$info-phone} {
+                  width: 125px;
+                  margin-left: 10px;
+                }
+                @media #{$info-phone-4} {
+                  width: 100px;
+                  margin-left: 10px;
+                }
+              }
+              @media #{$info-phone-2} {
+                height: 85px;
+                width: 136px;
+              }
+              @media #{$info-phone-4} {
+                height: 75px;
+              }
+            }
+            .item__price {
+              text-align: center;
+
+              p {
+                color: #505050;
+                @include font-size(20.5px);
+                font-weight: bolder;
+                @media #{$info-phone-3} {
+                  @include font-size(14px);
+                }
+              }
+            }
+            .item__quantity {
+              .quantity__input {
+                @include flex();
+                justify-content: center;
+                .form-control {
+                  height: 26px;
+                  width: 34px;
+                  @include font-size(11.46px);
+                  text-align: center;
+                  border-top: 1px solid #e2e3e4;
+                  border-bottom: 1px solid #e2e3e4;
+                  @media #{$info-phone-3} {
+                    height: 20px;
+                    width: 25px;
+                    padding: 0;
+                  }
+                }
+                .input__minus {
+                  button {
+                    border-radius: 10px 0 0 10px;
+                    height: 26px;
+                    border: 1px solid #e2e3e4;
+                    display: flex;
+                    align-items: center;
+                    @media #{$info-phone-3} {
+                      height: 20px;
+                    }
+                  }
+                }
+                .input__plus {
+                  button {
+                    height: 26px;
+                    border-radius: 0 10px 10px 0;
+                    border: 1px solid #e2e3e4;
+                    display: flex;
+                    align-items: center;
+                    @media #{$info-phone-3} {
+                      height: 20px;
+                    }
+                  }
+                }
+              }
+            }
+            .item__remove {
+              width: 50px;
+              @media #{$info-phone-2} {
+                width: 20px;
+              }
+            }
+          }
+        }
+      }
+      @media #{$info-tablet-vertical} {
+        grid-column: span 12;
+      }
+      @media #{$info-phone} {
+        padding: 50;
+      }
+    }
+    .cart__midle_right {
+      grid-column: 9 / span 4;
+      .right__content {
+        padding: 25px;
+        background-color: #fff;
+        margin-bottom: 13.5px;
+        .content__price {
+          @include flex();
+          justify-content: space-between;
+          margin-bottom: 12px;
+          p {
+            color: #505050;
+            @include font-size(14px);
+          }
+        }
+        .content__total {
+          @include flex();
+          justify-content: space-between;
+
+          p {
+            color: #505050;
+            @include font-size(14px);
+          }
+          div {
+            p {
+              color: #d72229;
+              @include font-size(21.29px);
+              font-weight: bolder;
+            }
+            span {
+              @include font-size(12px);
+              color: #505050;
+            }
+          }
+        }
+      }
+      .right__button {
+        padding: 0 25px;
+        a {
+          display: block;
+          text-decoration: none;
+          width: 100%;
+          color: #fff;
+          text-align: center;
+          @include font-size(22px);
+          border-radius: 0;
+          font-weight: bolder;
+          padding: 12px 0;
+        }
+      }
+      @media #{$info-tablet-vertical} {
+        grid-column: span 12;
+      }
+    }
+  }
+  @media #{$info-tablet-vertical} {
+    margin-top: 90px;
+  }
+}

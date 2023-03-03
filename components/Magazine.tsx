@@ -12,7 +12,7 @@ function Magazine() {
       <div className="magazine__content">
         <a className="item">
           <div className="item__image">
-            <img className="" src="/images/magazine.png" alt />
+            <img className="" src="/images/magazine.png" />
           </div>
 
           <div className="item__content">
@@ -22,7 +22,7 @@ function Magazine() {
         </a>
         <a className="item">
           <div className="item__image">
-            <img className="" src="/images/magazine.png" alt />
+            <img className="" src="/images/magazine.png" />
           </div>
 
           <div className="item__content">
@@ -32,7 +32,7 @@ function Magazine() {
         </a>
         <a className="item">
           <div className="item__image">
-            <img className="" src="/images/magazine.png" alt />
+            <img className="" src="/images/magazine.png" />
           </div>
 
           <div className="item__content">
@@ -42,7 +42,7 @@ function Magazine() {
         </a>
         <a className="item">
           <div className="item__image">
-            <img className="" src="/images/magazine.png" alt />
+            <img className="" src="/images/magazine.png" />
           </div>
 
           <div className="item__content">

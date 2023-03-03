@@ -283,7 +283,7 @@ function Collection() {
         <div className="right__top">
           <p>12 kết quả</p>
           <a className="filter" onClick={handleShowFilter}>
-            <i class="fas fa-filter"></i>
+            <i className="fas fa-filter"></i>
             <span>Bộ lọc</span>
           </a>
           <div className="form-group custom-form">
@@ -301,11 +301,11 @@ function Collection() {
         <div className="rigth__bottom common-product-3">
           {listImage.map((item: any, index: any) => {
             return (
-              <a href className="item" key={index}>
+              <a className="item" key={index}>
                 <div className="item__event">
                   <p>HOT</p>
                 </div>
-                <img className="item__image" src="/images/product-1.png" alt />
+                <img className="item__image" src="/images/product-1.png" />
                 <div className="item__info">
                   <h3>{item.title}</h3>
                   <p>999.000đ</p>
@@ -326,28 +326,28 @@ function Collection() {
         </div>
         <ul className="rigth__bottom-paginate common-paginate">
           <li>
-            <a href>
-              <i class="fas fa-chevron-left"></i>
+            <a>
+              <i className="fas fa-chevron-left"></i>
             </a>
           </li>
           <li className="active">
-            <a href>1</a>
+            <a>1</a>
           </li>
           <li>
-            <a href>2</a>
+            <a>2</a>
           </li>
           <li>
-            <a href>3</a>
+            <a>3</a>
           </li>
           <li>
-            <a href>4</a>
+            <a>4</a>
           </li>
           <li>
-            <a href>5</a>
+            <a>5</a>
           </li>
           <li>
-            <a href>
-              <i class="fas fa-chevron-right"></i>
+            <a>
+              <i className="fas fa-chevron-right"></i>
             </a>
           </li>
         </ul>
@@ -362,7 +362,6 @@ function Collection() {
       >
         <div className="mobile-filter" onClick={handleShowFilter}></div>
         <div
-          className="mobile-content"
           className={
             isShowFilter
               ? "mobile-content show-mobile-filter-content"

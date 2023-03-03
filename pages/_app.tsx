@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <React.Fragment>
       <Script src="/js/icons.js"></Script>
+
       <Header />
       <Component {...pageProps} />
       <Footer />

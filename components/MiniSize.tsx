@@ -83,11 +83,11 @@ export default function MiniSize() {
       <div className="mini-size__content common-product">
         {listImage.map((item: any, index: any) => {
           return (
-            <a href className="item" key={index}>
+            <a className="item" key={index}>
               <div className="item__event">
                 <p>HOT</p>
               </div>
-              <img className="item__image" src="/images/product-1.png" alt />
+              <img className="item__image" src="/images/product-1.png" />
               <div className="item__info">
                 <h3>{item.title}</h3>
                 <p>999.000đ</p>
