@@ -1,11 +1,45 @@
-import Link from 'next/link'
-import React from 'react'
-import Logo from './Logo'
+import React from "react";
 
 function Footer() {
   return (
-    <div></div>
-  )
+    <footer className="common-container">
+      <div className="footer">
+        <div className="item">
+          <h2>perfume</h2>
+          <div>
+            <a>Giới thiệu</a>
+            <a>Tuyển dụng</a>
+            <a>Liên hệ</a>
+          </div>
+        </div>
+        <div className="item">
+          <h2>Hỗ trợ khách hàng</h2>
+          <div>
+            <a>Giới thiệu</a>
+            <a>Tuyển dụng</a>
+            <a>Liên hệ</a>
+          </div>
+        </div>
+        <div className="item">
+          <h2>Địa chỉ</h2>
+          <div>
+            <p>72/1a Bạch Đằng</p>
+          </div>
+        </div>
+        <div className="item">
+          <h2>Kết nối</h2>
+          <div>
+            <a>
+              <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a>
+              <i class="fab fa-facebook-f"></i> Facebook
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
 }
 
-export default Footer
+export default Footer;

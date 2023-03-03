@@ -1,10 +1,30 @@
 @import "~tailwindcss/base";
 @import "~tailwindcss/components";
 @import "~tailwindcss/utilities";
+// Variables + Mixins + Functions
+@import "helpers/variables";
 
+// Always include variable 1st !
+@import "helpers/mixins";
+
+// Base
+@import "base/typography";
+@import "base/font-face";
+// end
 @import "components/type";
 @import "components/input";
-@import "components/fonts";
+// ----------------------------------------------------
+// Layout
+@import "layouts/button";
+@import "layouts/form-custom";
+@import "layouts/header";
+@import "layouts/footer";
+@import "layouts/common";
+@import "layouts/main";
+
+//Page
+@import "page/home/index";
+@import "page/collection/index";
 
 @layer base {
   body {
@@ -42,5 +62,5 @@
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #fff;
   -webkit-text-stroke-width: 2px;
-  opacity: .4;
+  opacity: 0.4;
 }

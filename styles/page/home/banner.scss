@@ -1,0 +1,14 @@
+.baner {
+  .baner__item {
+    height: 520px;
+    //height: 100vh;
+    background-image: url("../../../public/images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 15px;
+    @media #{$info-phone} {
+      height: 380px;
+    }
+  }
+}
