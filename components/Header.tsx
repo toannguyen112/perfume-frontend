@@ -28,9 +28,7 @@ function Header() {
           <p>Miễn phí vẫn chuyển đơn hàng trên 300k</p>
         </div>
         <div className="nav__midle common-container">
-          <a href className="nav__midle__brand">
-            perfume
-          </a>
+          <a className="nav__midle__brand">perfume</a>
           <div className="input-group midle__input">
             <input
               type="text"
@@ -38,7 +36,7 @@ function Header() {
               placeholder="tìm kiếm"
             />
           </div>
-          <a href className="btn--write midle__btn">
+          <a className="btn--write midle__btn">
             <svg
               width="17"
               height="18"
@@ -63,10 +61,7 @@ function Header() {
             <p>Giỏ Hàng</p>
             <span>69</span>
           </a>
-          <a
-            href="/views/upload-toa/upload-toa.html"
-            className="btn--write midle__btn"
-          >
+          <a className="btn--write midle__btn">
             <svg
               width={20}
               height={20}
@@ -82,10 +77,7 @@ function Header() {
 
             <p>Blog</p>
           </a>
-          <a
-            href="/views/upload-toa/upload-toa.html"
-            className="btn--write midle__btn"
-          >
+          <a className="btn--write midle__btn">
             <svg
               width={20}
               height={20}
@@ -104,10 +96,7 @@ function Header() {
         </div>
         <ul className="nav__bottom common-container">
           <li>
-            <a className="nav__links" href>
-              {" "}
-              Deal thơm
-            </a>
+            <a className="nav__links"> Deal thơm</a>
             <div className="dropdown">
               <div className="dropdown__content common-container">
                 <div className="content_left">
@@ -147,17 +136,13 @@ function Header() {
             </div>
           </li>
           <li>
-            <a className="nav__links" href>
-              Nước hoa nam
-            </a>
+            <a className="nav__links">Nước hoa nam</a>
             <div className="dropdown">
               <div className="dropdown__content common-container"></div>
             </div>
           </li>
           <li>
-            <a className="nav__links" href>
-              Nước hoa nữ
-            </a>
+            <a className="nav__links">Nước hoa nữ</a>
             <div className="dropdown">
               <div className="dropdown__content common-container">
                 <div className="content_left">
@@ -198,26 +183,20 @@ function Header() {
           </li>
           <li>
             {/* <img src="assets/img/icon-hear.png" alt /> */}
-            <a className="nav__links" href>
-              Nước hoa mini
-            </a>
+            <a className="nav__links">Nước hoa mini</a>
             <div className="dropdown">
               <div className="dropdown__content common-container"></div>
             </div>
           </li>
           <li>
             {/* <img src="assets/img/icon-home.png" alt /> */}
-            <a className="nav__links" href>
-              Gift
-            </a>
+            <a className="nav__links">Gift</a>
             <div className="dropdown">
               <div className="dropdown__content common-container"></div>
             </div>
           </li>
           <li>
-            <a className="nav__links" href>
-              Thương hiệu
-            </a>
+            <a className="nav__links">Thương hiệu</a>
             <div className="dropdown">
               <div className="dropdown__content common-container">
                 <div className="content_left">
@@ -260,9 +239,7 @@ function Header() {
             {/* <div>
               <img src="assets/img/icon-question.png" alt />
             </div> */}
-            <a className="nav__links" href>
-              Quà tặng
-            </a>
+            <a className="nav__links">Quà tặng</a>
             <div className="dropdown">
               <div className="dropdown__content"></div>
             </div>
@@ -274,9 +251,7 @@ function Header() {
         style={scrolled ? { opacity: 1 } : { opacity: 0 }}
       >
         <div className="common-container nav-scroll__content">
-          <a href className="nav__scroll__brand">
-            perfume
-          </a>
+          <a className="nav__scroll__brand">perfume</a>
           <div className="input-group scroll__input">
             <input
               type="text"
@@ -284,7 +259,7 @@ function Header() {
               placeholder="tìm kiếm"
             />
           </div>
-          <a href className="btn--write midle__btn">
+          <a className="btn--write midle__btn">
             <svg
               width="17"
               height="18"
@@ -309,10 +284,7 @@ function Header() {
             <p>Giỏ Hàng</p>
             <span>69</span>
           </a>
-          <a
-            href="/views/upload-toa/upload-toa.html"
-            className="btn--write midle__btn"
-          >
+          <a className="btn--write midle__btn">
             <svg
               width={20}
               height={20}
@@ -328,10 +300,7 @@ function Header() {
 
             <p>Blog</p>
           </a>
-          <a
-            href="/views/upload-toa/upload-toa.html"
-            className="btn--write midle__btn"
-          >
+          <a className="btn--write midle__btn">
             <svg
               width={20}
               height={20}
@@ -354,9 +323,7 @@ function Header() {
           <div className="nav-mobile__bars" onClick={handleShowMenu}>
             <i className="fas fa-bars" />
           </div>
-          <a href className="nav__mobile__brand">
-            perfume
-          </a>
+          <a className="nav__mobile__brand">perfume</a>
           <div className="nav-mobile__cart">
             <svg
               width="17"
@@ -393,25 +360,25 @@ function Header() {
             </div>
             <ul>
               <li>
-                <a href>Deal thơm</a>
+                <a>Deal thơm</a>
               </li>
               <li>
-                <a href>Nước hoa nam</a>
+                <a>Nước hoa nam</a>
               </li>
               <li>
-                <a href>Nước hoa nữ</a>
+                <a>Nước hoa nữ</a>
               </li>
               <li>
-                <a href>Nước hoa mini</a>
+                <a>Nước hoa mini</a>
               </li>
               <li>
-                <a href>Gift</a>
+                <a>Gift</a>
               </li>
               <li>
-                <a href>Thương hiệu</a>
+                <a>Thương hiệu</a>
               </li>
               <li>
-                <a href>Quà tặng</a>
+                <a>Quà tặng</a>
               </li>
             </ul>
           </div>

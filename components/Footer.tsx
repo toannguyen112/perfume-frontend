@@ -30,10 +30,10 @@ function Footer() {
           <h2>Kết nối</h2>
           <div>
             <a>
-              <i class="fab fa-instagram"></i> Instagram
+              <i className="fab fa-instagram"></i> Instagram
             </a>
             <a>
-              <i class="fab fa-facebook-f"></i> Facebook
+              <i className="fab fa-facebook-f"></i> Facebook
             </a>
           </div>
         </div>
