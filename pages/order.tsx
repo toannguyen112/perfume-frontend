@@ -81,7 +81,7 @@ export default function order() {
               >
                 <label>Phường / Xã</label>
                 <div className="inline__wrap-select custom-select">
-                  <select className="form-control">
+                  <select>
                     <option>1</option>
                     <option>2</option>
                     <option>3</option>
@@ -94,11 +94,10 @@ export default function order() {
               <div className="form-group custom-form">
                 <label htmlFor="note">Ghi chú</label>
                 <textarea
-                  type="note"
                   className="form-control"
                   style={{ height: "60px" }}
                   placeholder="Nhập ghi chú"
-                  rows="4"
+                  rows={4}
                 />
                 <span>*</span>
               </div>
@@ -113,7 +112,7 @@ export default function order() {
         </div>
         <div className="content__midle">
           <h2>Hình thức thanh toán</h2>
-          <form action>
+          <form>
             <div className="form-check custom-check">
               <label className="form-check-label">
                 <input
@@ -138,12 +137,69 @@ export default function order() {
               </label>
             </div>
           </form>
+
+          <div className="info">
+            <h3>TÀI KHOẢN</h3>
+            <ul>
+              <li>
+                Ngân hàng: Vietcombank - Ngân hàng TMCP Ngoại thương Việt Nam
+              </li>
+              <li>Chi nhánh: Tân Sơn Nhất - Trụ sở CN Tân Sơn Nhất</li>
+              <li>Số tài khoản: 970.777.8888</li>
+              <li>Chủ tài khoản: Nguyễn Công Toàn</li>
+            </ul>
+            <h3>NỘI DUNG CHUYỂN KHOẢN</h3>
+            <ul>
+              <li>
+                Nội dung thanh toán theo cú pháp: [SDT] [Khoảng cách] [Mã đơn
+                hàng] [Nội dung muốn nhắn thêm nếu có]
+              </li>
+            </ul>
+          </div>
         </div>
         <div className="content__right">
           <h2>Đơn hàng</h2>
           <div className="right__title">
             <p>San pham</p>
-            <p>Sửa</p>
+            <button>Sửa</button>
+          </div>
+          <div className="right__product">
+            <div className="product__item">
+              <div className="item__name">
+                <img src="/images/product-1.png" />
+                <div>
+                  <h3>tên sản phẩm</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+              </div>
+              <p>800.000đ</p>
+            </div>
+            <div className="product__item">
+              <div className="item__name">
+                <img src="/images/product-1.png" />
+                <div>
+                  <h3>tên sản phẩm</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetuer adipi</p>
+                </div>
+              </div>
+              <p>800.000đ</p>
+            </div>
+          </div>
+          <div>
+            <div className="right__sub">
+              <p>Tạm tính</p>
+              <p>800.000đ</p>
+            </div>
+            <div className="right__total">
+              <p>Thành tiền:</p>
+              <div>
+                <p>1.000.000đ</p>
+                <span>(đã bao gôm VAT nếu có)</span>
+              </div>
+            </div>
+            <div className="right__button">
+              <a className="btn--red">THANH TOÁN</a>
+            </div>
           </div>
         </div>
       </div>
