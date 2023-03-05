@@ -88,10 +88,7 @@ export default function Cart() {
             <div className="content__products">
               <div className="products__item">
                 <div className="item__image">
-                  <img
-                    src="https://imagevietnam.vn/images/thumbs/z3455793910663_39238ee4cecacc1e00eb38a007215cbf.jpg"
-                    alt
-                  />
+                  <img src="https://imagevietnam.vn/images/thumbs/z3455793910663_39238ee4cecacc1e00eb38a007215cbf.jpg" />
                   <div>
                     <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin</p>
                     <a>12.000.000 đ</a>
@@ -121,10 +118,7 @@ export default function Cart() {
               </div>
               <div className="products__item">
                 <div className="item__image">
-                  <img
-                    src="https://imagevietnam.vn/images/thumbs/z3455793910663_39238ee4cecacc1e00eb38a007215cbf.jpg/assets/img/cart/p-2.pnghttps://imagevietnam.vn/images/thumbs/z3455793910663_39238ee4cecacc1e00eb38a007215cbf.jpg"
-                    alt
-                  />
+                  <img src="https://imagevietnam.vn/images/thumbs/z3455793910663_39238ee4cecacc1e00eb38a007215cbf.jpg/assets/img/cart/p-2.pnghttps://imagevietnam.vn/images/thumbs/z3455793910663_39238ee4cecacc1e00eb38a007215cbf.jpg" />
                   <div>
                     <p>Thực Phẩm Chức Năng Viên Sủi Bổ Sung Vitamin</p>
                     <a>12.000.000 đ</a>
@@ -189,7 +183,7 @@ export default function Cart() {
                 <div className="item__event">
                   <p>HOT</p>
                 </div>
-                <img className="item__image" src="/images/product-1.png" alt />
+                <img className="item__image" src="/images/product-1.png" />
                 <div className="item__info">
                   <h3>{item.title}</h3>
                   <p>999.000đ</p>
@@ -224,7 +218,7 @@ export default function Cart() {
                 <div className="item__event">
                   <p>HOT</p>
                 </div>
-                <img className="item__image" src="/images/product-1.png" alt />
+                <img className="item__image" src="/images/product-1.png" />
                 <div className="item__info">
                   <h3>{item.title}</h3>
                   <p>999.000đ</p>
