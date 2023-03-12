@@ -13,6 +13,7 @@
 // end
 @import "components/type";
 @import "components/input";
+@import "components/breadcrumb";
 // ----------------------------------------------------
 // Layout
 @import "layouts/button";
@@ -27,6 +28,10 @@
 @import "page/collection/index";
 @import "page/cart/index";
 @import "page/order/index";
+@import "page/detail/index";
+@import "page/auth/index";
+@import "page/policy/index";
+@import "page/blogs/index";
 
 @layer base {
   body {

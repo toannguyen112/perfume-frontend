@@ -2,7 +2,7 @@ import React from "react";
 
 function Blogs() {
   return (
-    <section className="common-container blogs">
+    <section className="common-container blogs-main">
       <div className="common-title">
         <div>
           <p>Blogs</p>

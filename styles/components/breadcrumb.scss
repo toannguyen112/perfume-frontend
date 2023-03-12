@@ -1,15 +1,32 @@
 .breadcrumb {
-  .breadcrumb-item {
-    &:not(:last-child) {
+  ul {
+    display: flex;
+    margin-bottom: 20px;
+    height: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      padding: 5px 10px;
       position: relative;
-      margin-right: 29px;
-      &:before {
-        content: '/';
+      a {
+        color: #707070;
+        font-size: 14px;
+        &.active {
+          color: #000;
+          font-weight: bolder;
+        }
+      }
+      &::after {
+        content: "/";
         position: absolute;
-        top: 50%;
-        left: calc(100% + 12px);
-        transform: translateY(-50%);
-        color: theme('colors.gray.500');
+        right: 0;
+        top: 0;
+        transform: translate(25%, 25%);
+      }
+      &:last-child {
+        &::after {
+          content: "";
+        }
       }
     }
   }

@@ -2,8 +2,8 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="common-container">
-      <div className="footer">
+    <footer>
+      <div className="common-container footer">
         <div className="item">
           <h2>perfume</h2>
           <div>
