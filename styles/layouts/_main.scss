@@ -453,13 +453,12 @@ main {
           @include font-size(12px);
         }
       }
-      @media #{$info-phone-3} {
+      @media #{$info-phone} {
         height: 24px;
       }
     }
     .item__image {
       height: 280px;
-      width: 280px;
       margin: 0 auto;
       img {
         height: 100%;
@@ -530,7 +529,14 @@ main {
     grid-template-columns: repeat(2, 1fr);
   }
   @media #{$info-phone-4} {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0;
+    width: 280px;
+    overflow-y: scroll;
+    margin: 0 auto;
+    .item {
+      width: 280px;
+    }
   }
 }
 

@@ -41,16 +41,6 @@
           }
         }
       }
-      @media #{$info-phone-4} {
-        gap: unset;
-        justify-content: center;
-        .top__item {
-          width: 100%;
-          img {
-            margin: 0 auto;
-          }
-        }
-      }
       // $info-tablet-vertical-1: "only screen and (max-width : 896px)";
     }
     .content_bottom {

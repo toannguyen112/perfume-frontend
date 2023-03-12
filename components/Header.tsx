@@ -430,51 +430,58 @@ function Header() {
           </div>
           <div
             className={
-              isShowMenu ? "nav-mobile__menu open" : "nav-mobile__menu"
+              isShowMenu ? "nav-mobile__menu open-layout" : "nav-mobile__menu"
             }
           >
-            <div className="nav-mobile__menu__head">
-              <p>Danh mục</p>
-              <div className="btn-close" onClick={handleShowMenu}>
-                <i className="fas fa-window-close" />
-              </div>
-            </div>
-            <ul>
-              <li>
-                <a>
-                  Deal thơm <i className="fas fa-chevron-up"></i>
-                </a>
-                <div className="dropdown">
-                  <div className="dropdown__links">
-                    <a>item 1</a>
-                    <a>item 1</a>
-                    <a>item 1</a>
-                    <a>item 1</a>
-                  </div>
-                  <div className="dropdown__image">
-                    <img src="/images/header-2.png" />
-                  </div>
+            <div className="mobile-filter"></div>
+            <div
+              className={
+                isShowMenu ? "mobile__content open" : "mobile__content"
+              }
+            >
+              <div className="nav-mobile__menu__head">
+                <p>Danh mục</p>
+                <div className="btn-close" onClick={handleShowMenu}>
+                  <i className="fas fa-window-close" />
                 </div>
-              </li>
-              <li>
-                <a>Nước hoa nam</a>
-              </li>
-              <li>
-                <a>Nước hoa nữ</a>
-              </li>
-              <li>
-                <a>Nước hoa mini</a>
-              </li>
-              <li>
-                <a>Gift</a>
-              </li>
-              <li>
-                <a>Thương hiệu</a>
-              </li>
-              <li>
-                <a>Quà tặng</a>
-              </li>
-            </ul>
+              </div>
+              <ul>
+                <li>
+                  <a>
+                    Deal thơm <i className="fas fa-chevron-up"></i>
+                  </a>
+                  <div className="dropdown">
+                    <div className="dropdown__links">
+                      <a>item 1</a>
+                      <a>item 1</a>
+                      <a>item 1</a>
+                      <a>item 1</a>
+                    </div>
+                    <div className="dropdown__image">
+                      <img src="/images/header-2.png" />
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <a>Nước hoa nam</a>
+                </li>
+                <li>
+                  <a>Nước hoa nữ</a>
+                </li>
+                <li>
+                  <a>Nước hoa mini</a>
+                </li>
+                <li>
+                  <a>Gift</a>
+                </li>
+                <li>
+                  <a>Thương hiệu</a>
+                </li>
+                <li>
+                  <a>Quà tặng</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
