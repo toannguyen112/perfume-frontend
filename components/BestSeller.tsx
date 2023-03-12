@@ -83,7 +83,9 @@ export default function BestSeller() {
               <div className="item__event">
                 <p>HOT</p>
               </div>
-              <img className="item__image" src={item.images[0]} />
+              <div className="item__image">
+                <img className="item__image" src={item.images[0]} />
+              </div>
               <div className="item__info">
                 <h3>{item.title}</h3>
                 <p>999.000đ</p>

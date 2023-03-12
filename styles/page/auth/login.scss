@@ -1,0 +1,95 @@
+.login {
+  display: flex;
+  gap: 30px;
+  margin-top: 35px;
+  height: 60vh;
+  .login__item {
+    width: calc((100% - 90px) / 4);
+  }
+  .register__info {
+    h3 {
+      color: #707070;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 14px;
+      margin-bottom: 40px;
+      line-height: 24px;
+      @media #{$info-tablet-vertical-1} {
+        line-height: 16px;
+        margin-bottom: 31px;
+      }
+    }
+    a {
+      width: 100%;
+    }
+  }
+  .form {
+    h3 {
+      color: #707070;
+      font-size: 16px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    a {
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+
+  .banner {
+    background-image: url(../../../public/images/bg-login.png);
+    height: 445px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  @media #{$info-tablet-vertical} {
+    margin-top: 90px;
+  }
+  @media #{$info-tablet-vertical-1} {
+    gap: 15px;
+    .login__item {
+      width: calc((100% - 45px) / 4);
+    }
+  }
+  @media #{$info-phone} {
+    flex-wrap: wrap;
+    height: 100vh;
+    .login__item {
+      width: calc((100% - 45px) / 3);
+    }
+    .banner {
+      height: 430px;
+    }
+  }
+  @media #{$info-phone-2} {
+    flex-wrap: wrap-reverse;
+    .login__item {
+      width: calc((100% - 30px) / 2);
+    }
+    .register__info {
+      margin-top: 15px;
+    }
+  }
+  @media #{$info-phone-4} {
+    flex-direction: column;
+    height: 100%;
+    .login__item {
+      width: 100%;
+    }
+    .register__info {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .banner {
+      height: 455px;
+      background-size: contain;
+    }
+  }
+}

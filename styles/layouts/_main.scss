@@ -31,8 +31,9 @@ main {
     }
   }
   a {
-    color: #d72229;
-    @include font-size(18.5px);
+    color: #707070;
+    font-size: 16px;
+    text-decoration: underline;
   }
 }
 .common-paginate {
@@ -429,7 +430,7 @@ main {
   gap: 25px;
   .item {
     position: relative;
-    border: 1px solid #e5e5e4;
+    // border: 1px solid #e5e5e4;
     text-align: center;
     transition: all 0.5s;
     .item__event {
@@ -458,7 +459,13 @@ main {
     }
     .item__image {
       height: 280px;
-      width: 100%;
+      width: 280px;
+      margin: 0 auto;
+      img {
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+      }
       @media #{$info-phone-3} {
         height: 180px;
       }

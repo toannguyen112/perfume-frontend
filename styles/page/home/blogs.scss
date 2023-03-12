@@ -1,4 +1,4 @@
-.blogs {
+.blogs-main {
   .blogs__content {
     display: flex;
     gap: 39px;
@@ -6,7 +6,7 @@
       width: 50%;
       h3 {
         line-height: 22px;
-        @font-size (18px);
+        font-size: 18px;
         font-weight: bolder;
         margin: 13px 0;
         @media #{$info-tablet-vertical} {

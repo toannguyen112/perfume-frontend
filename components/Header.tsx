@@ -30,13 +30,19 @@ function Header() {
         <div className="nav__midle common-container">
           <a className="nav__midle__brand">perfume</a>
           <div className="input-group midle__input">
+            <div className="input-group-append">
+              <button className="btn--search" type="submit">
+                <i className="fa-regular fa-magnifying-glass" />
+              </button>
+            </div>
+
             <input
               type="text"
               className="form-control"
               placeholder="tìm kiếm"
             />
           </div>
-          <a className="btn--write midle__btn">
+          <a className="btn--write midle__btn-cart">
             <svg
               width="17"
               height="18"
@@ -60,6 +66,43 @@ function Header() {
 
             <p>Giỏ Hàng</p>
             <span>69</span>
+            <div className="list-cart">
+              <h3>Sản phẩm mới thêm</h3>
+              <div className="wrap-item">
+                <a className="item">
+                  <div className="item__image">
+                    <img src="/images/product-1.png" />
+                  </div>
+                  <div className="item__content">
+                    Son môi Rouge Dior Refillable Lipstick
+                  </div>
+                  <p className="item__price">12.000.000 d</p>
+                </a>
+                <a className="item">
+                  <div className="item__image">
+                    <img src="/images/product-1.png" />
+                  </div>
+                  <div className="item__content">
+                    Son môi Rouge Dior Refillable Lipstick
+                  </div>
+                  <p className="item__price">12.000.000 d</p>
+                </a>
+                <a className="item">
+                  <div className="item__image">
+                    <img src="/images/product-1.png" />
+                  </div>
+                  <div className="item__content">
+                    Son môi Rouge Dior Refillable Lipstick
+                  </div>
+                  <p className="item__price">12.000.000 d</p>
+                </a>
+              </div>
+
+              <div className="list-cart__footer">
+                <p>1 san pham</p>
+                <a className="btn--red">Thêm giỏ hàng</a>
+              </div>
+            </div>
           </a>
           <a className="btn--write midle__btn">
             <svg
@@ -259,7 +302,7 @@ function Header() {
               placeholder="tìm kiếm"
             />
           </div>
-          <a className="btn--write midle__btn">
+          <a className="btn--write">
             <svg
               width="17"
               height="18"
@@ -346,6 +389,44 @@ function Header() {
               />
             </svg>
             <span>69</span>
+
+            <div className="list-cart">
+              <h3>Sản phẩm mới thêm</h3>
+              <div className="wrap-item">
+                <a className="item">
+                  <div className="item__image">
+                    <img src="/images/product-1.png" />
+                  </div>
+                  <div className="item__content">
+                    Son môi Rouge Dior Refillable Lipstick
+                  </div>
+                  <p className="item__price">12.000.000 d</p>
+                </a>
+                <a className="item">
+                  <div className="item__image">
+                    <img src="/images/product-1.png" />
+                  </div>
+                  <div className="item__content">
+                    Son môi Rouge Dior Refillable Lipstick
+                  </div>
+                  <p className="item__price">12.000.000 d</p>
+                </a>
+                <a className="item">
+                  <div className="item__image">
+                    <img src="/images/product-1.png" />
+                  </div>
+                  <div className="item__content">
+                    Son môi Rouge Dior Refillable Lipstick
+                  </div>
+                  <p className="item__price">12.000.000 d</p>
+                </a>
+              </div>
+
+              <div className="list-cart__footer">
+                <p>1 san pham</p>
+                <a className="btn--red">Thêm giỏ hàng</a>
+              </div>
+            </div>
           </div>
           <div
             className={
@@ -360,7 +441,20 @@ function Header() {
             </div>
             <ul>
               <li>
-                <a>Deal thơm</a>
+                <a>
+                  Deal thơm <i className="fas fa-chevron-up"></i>
+                </a>
+                <div className="dropdown">
+                  <div className="dropdown__links">
+                    <a>item 1</a>
+                    <a>item 1</a>
+                    <a>item 1</a>
+                    <a>item 1</a>
+                  </div>
+                  <div className="dropdown__image">
+                    <img src="/images/header-2.png" />
+                  </div>
+                </div>
               </li>
               <li>
                 <a>Nước hoa nam</a>

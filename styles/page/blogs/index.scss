@@ -1,0 +1,91 @@
+@import "./detail";
+
+.blogs {
+  .blogs__content {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    .item {
+      width: calc((100% - 30px) / 2);
+      display: flex;
+      gap: 20px;
+      .item__image {
+        width: calc(100% / 2);
+        @media #{$info-phone} {
+          width: 30%;
+          height: 70px;
+          img {
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        @media #{$info-phone-2} {
+          width: 40%;
+          height: 130px;
+        }
+        @media #{$info-phone-3} {
+          width: 30%;
+          height: 90px;
+        }
+      }
+      .item__info {
+        width: calc((100% - 20px) / 2);
+        h3 {
+          line-height: 22px;
+          font-size: 18px;
+          font-weight: bolder;
+          margin: 8px 0;
+          @media #{$info-tablet-vertical} {
+            margin: 0;
+          }
+          @media #{$info-tablet-vertical-1} {
+            line-height: 17px;
+          }
+          @media #{$info-phone-2} {
+            line-height: 22px;
+            margin-bottom: 10px;
+            margin-top: 4px;
+          }
+          @media #{$info-phone-3} {
+            line-height: 18px;
+            margin-bottom: 5px;
+          }
+        }
+        p {
+          color: #707070;
+          line-height: 17px;
+          font-size: 14px;
+          @media #{$info-tablet-vertical-1} {
+            line-height: 14px;
+          }
+        }
+        @media #{$info-phone} {
+          width: 70%;
+        }
+        @media #{$info-phone-2} {
+          width: 60%;
+        }
+      }
+      @media #{$info-tablet-vertical-1} {
+        gap: 15px;
+      }
+      @media #{$info-phone-2} {
+        width: 100%;
+      }
+    }
+    @media #{$info-tablet-vertical-1} {
+      gap: 15px;
+    }
+    @media #{$info-phone-2} {
+      gap: 20px;
+    }
+    @media #{$info-phone-2} {
+      flex-direction: column;
+    }
+  }
+  @media #{$info-tablet-vertical} {
+    padding-top: 50px;
+  }
+}
