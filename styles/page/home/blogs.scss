@@ -4,6 +4,13 @@
     gap: 39px;
     .content__left {
       width: 50%;
+      .image {
+        width: 100%;
+        overflow: hidden;
+        img {
+          transition: all 0.4s ease-in-out;
+        }
+      }
       h3 {
         line-height: 22px;
         font-size: 18px;
@@ -24,6 +31,16 @@
         width: 100%;
         margin-bottom: 15px;
       }
+      &:hover {
+        .image {
+          img {
+            transform: scale(1.2);
+          }
+        }
+        h3 {
+          color: #d72229;
+        }
+      }
     }
     .content__right {
       width: 50%;
@@ -35,6 +52,10 @@
         margin-bottom: 15px;
         .item__image {
           width: 50%;
+          overflow: hidden;
+          img {
+            transition: all 0.4s ease-in-out;
+          }
           @media #{$info-phone} {
             width: 40%;
           }
@@ -73,6 +94,18 @@
         }
         @media #{$info-phone-2} {
           gap: 8px;
+        }
+        &:hover {
+          .item__image {
+            img {
+              transform: scale(1.2);
+            }
+          }
+          .item__content {
+            h3 {
+              color: #d72229;
+            }
+          }
         }
       }
       @media #{$info-tablet-vertical} {
